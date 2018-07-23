@@ -59,6 +59,6 @@ class Facade
 }
 
 
-// Client code
+// Client codet
 $Transfer = new Facade();
 $Transfer -> transfer(1000);
