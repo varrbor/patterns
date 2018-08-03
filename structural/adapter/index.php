@@ -1,42 +1,35 @@
 <?php
+// https://code.tutsplus.com/ru/tutorials/design-patterns-the-adapter-pattern--cms-22262
+// Concrete Implementation of PayPal Class
+class PayPal {
 
-// Целевой интерфейс, клиент умеет работать только с ним
-interface iTarget
-{
-    public function query();
-}
+    public function __construct() {
+        // Your Code here //
+    }
 
-// Адаптируемый интерфейс. Клиент с ним не умеет работать, но очень хочет
-interface iAdaptee
-{
-    public function request();
-}
-
-
-// Класс, реализующий адаптирумым интерфейс
-class Adaptee implements iAdaptee 
-{
-    public function request()
-    {
-        return __CLASS__ . "::" . __METHOD__;
+    public function sendPayment($amount) {
+        // Paying via Paypal //
+        echo "Paying via PayPal: ". $amount;
     }
 }
 
-class Adapter implements iTarget
-{
-    protected
-        $adaptee = null;
+// Simple Interface for each Adapter we create
+interface paymentAdapter {
+    public function pay($amount);
+}
 
-    public function __construct()
-    {
-        $this -> adaptee = new Adaptee();
+class paypalAdapter implements paymentAdapter {
+
+    private $paypal;
+
+    public function __construct(PayPal $paypal) {
+        $this->paypal = $paypal;
     }
-    
-    public function query()
-    {
-        return $this -> adaptee -> request();
+
+    public function pay($amount) {
+        $this->paypal->sendPayment($amount);
     }
 }
 
-$Target = new Adapter();
-print $Target -> query(); // "Adaptee::request"
+$paypal = new paypalAdapter(new PayPal());
+$paypal->pay('2629');
