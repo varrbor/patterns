@@ -11,6 +11,7 @@ class Author {
     public function __construct($firstName, $lastName, $someName) {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
+        $this->someName = $someName;
     }
 
     public function getFirstName() {
@@ -46,4 +47,3 @@ echo '<pre>';
 print_r( $rr->getQuestion().','. $rr->getAuthor()->getFirstName());
 echo '</pre>';
 die();
-;
