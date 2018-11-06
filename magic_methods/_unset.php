@@ -28,6 +28,6 @@ class Person
 }
 
 $person = new Person("John", 25); // Initially assigned.
-unset($person->sex),"<br>";
-unset($person->name),"<br>";
-unset($person->age),"<br>";
+unset($person->sex);
+unset($person->name);
+unset($person->age);
