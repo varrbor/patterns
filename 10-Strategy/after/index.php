@@ -1,3 +1,4 @@
+https://zinchenko.us/article/design-pattern-strategy/
 <?php
 
 /**

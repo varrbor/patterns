@@ -22,4 +22,6 @@ $book->author_last_name = "Fowler";
 
 echo $book->title . " is a book written by " . $book->author_first_name . " " . $book->author_last_name . "\n";
 
+echo '<br>';
+
 echo "But you will find the book under " . $book->author_last_name . ", " . $book->author_first_name . "\n";
