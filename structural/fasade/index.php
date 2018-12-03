@@ -4,9 +4,34 @@
  * SystemA
  */
 
-class Bank 
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+interface iBank
 {
-    public function OpenTransaction() {}
+    public function OpenTransaction() ;
+    public function CloseTransaction();
+
+    public function transferMoney($amount);
+
+}
+
+interface iClient
+{
+    public function OpenTransaction() ;
+    public function CloseTransaction();
+
+    public function transferMoney($amount);
+}
+
+class Bank implements iBank
+{
+    public function OpenTransaction() {
+
+    }
+
     public function CloseTransaction() {}
     
     public function transferMoney($amount) {}
@@ -16,11 +41,11 @@ class Bank
  * SystemB
  */
 
-class Client
+class Client implements iClient
 {
     public function OpenTransaction() {}
     public function CloseTransaction() {}
-    
+
     public function transferMoney($amount) {}
 }
 
@@ -40,17 +65,17 @@ class Facade
         $Bank = new Bank();
         $Client = new Client();
         $Log = new Log();
-        
+
         $Bank -> OpenTransaction();
         $Client -> OpenTransaction();
         $Log -> logTransaction('Transaction open');
-        
+
         $Bank -> transferMoney(-$amount);
         $Log -> logTransaction('Transfer money from bank');
-        
+
         $Client -> transferMoney($amount);
         $Log -> logTransaction('Transfer money to client');
-        
+
         $Bank -> CloseTransaction();
         $Client -> CloseTransaction();
         $Log -> logTransaction('Transaction close');
