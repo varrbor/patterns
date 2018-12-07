@@ -1,5 +1,4 @@
-https://zinchenko.us/article/design-pattern-strategy/
-<?php
+<!--https://code.tutsplus.com/uk/tutorials/design-patterns-the-strategy-pattern--cms-22796--><?php
 
 /**
  * Copyright (c) 2014 Keith Casey

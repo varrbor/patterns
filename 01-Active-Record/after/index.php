@@ -7,6 +7,8 @@
  *   by Keith Casey. If you've received this code without seeing the videos, go watch the
  *   videos. It will make way more sense and be more useful in general.
  */
+error_reporting(1);
+ini_set('display_errors','On');
 
 include_once 'user.php';
 
