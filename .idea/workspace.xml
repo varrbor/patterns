@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcdc033c-e2ae-4466-86a9-4396d2f449a2" name="Default" comment="fix">
-      <change afterPath="$PROJECT_DIR$/creational/SimpleFactory/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/creational/SimpleFactory/Notifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/creational/SimpleFactory/NotifierFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/creational/SimpleFactory/SMS.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/creational/SimpleFactory/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/Device.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/InstantMessenger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/Messenger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/Phone.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/SMS.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/Tablet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/Transmitter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/bridge/index.php" afterDir="false" />
+    <list default="true" id="bcdc033c-e2ae-4466-86a9-4396d2f449a2" name="Default" comment="add simple factory">
+      <change afterPath="$PROJECT_DIR$/creational/builder/after/Pizza.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creational/builder/after/PizzaBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creational/builder/after/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creational/builder/before/Pizza.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creational/builder/index.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +31,7 @@
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
@@ -47,11 +39,12 @@
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -60,8 +53,8 @@
         <counts>
           <entry key="dummy" value="23" />
           <entry key="html" value="46" />
-          <entry key="php" value="838" />
-          <entry key="txt" value="23" />
+          <entry key="php" value="903" />
+          <entry key="txt" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class" />
@@ -69,15 +62,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="99" />
+          <entry key="PHP" value="104" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="48" />
-          <entry key="PHP" value="836" />
-          <entry key="PLAIN_TEXT" value="46" />
+          <entry key="PHP" value="901" />
+          <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test" />
@@ -86,7 +79,7 @@
           <entry key="NotifierFactory" value="1" />
           <entry key="SimpleFactory" value="1" />
           <entry key="html" value="1" />
-          <entry key="php" value="99" />
+          <entry key="php" value="104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions" />
@@ -122,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creational/SimpleFactory/NotifierFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -136,6 +129,42 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/creational/builder/after/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/creational/builder/after/PizzaBuilder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/creational/builder/after/Pizza.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/creational/builder/before/Pizza.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -203,6 +232,10 @@
         <option value="$PROJECT_DIR$/creational/SimpleFactory/NotifierFactory" />
         <option value="$PROJECT_DIR$/creational/SimpleFactory/NotifierFactory.php" />
         <option value="$PROJECT_DIR$/creational/SimpleFactory/index.php" />
+        <option value="$PROJECT_DIR$/creational/builder/PizzaBuilder.php" />
+        <option value="$PROJECT_DIR$/creational/builder/index.php" />
+        <option value="$PROJECT_DIR$/creational/builder/Pizza.php" />
+        <option value="$PROJECT_DIR$/creational/builder/before/Pizza.php" />
       </list>
     </option>
   </component>
@@ -242,6 +275,19 @@
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="462c0819:PsiDirectoryNode" />
               <item name="creational" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="creational" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
+              <item name="after" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="creational" type="462c0819:PsiDirectoryNode" />
               <item name="SimpleFactory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -268,15 +314,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/creational/builder/after" />
+      <recent name="$PROJECT_DIR$/data_types" />
+      <recent name="$PROJECT_DIR$/creational/builder" />
+      <recent name="$PROJECT_DIR$/structural/fasade" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/structural/adapter" />
       <recent name="$PROJECT_DIR$/creational" />
       <recent name="$PROJECT_DIR$/structural" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data_types" />
-      <recent name="$PROJECT_DIR$/creational/builder" />
-      <recent name="$PROJECT_DIR$/structural/fasade" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,6 +387,8 @@
       <workItem from="1545897618606" duration="1198000" />
       <workItem from="1545982360657" duration="2548000" />
       <workItem from="1546606669395" duration="4732000" />
+      <workItem from="1546932233827" duration="769000" />
+      <workItem from="1546940916738" duration="3700000" />
     </task>
     <task id="LOCAL-00001" summary="rrr">
       <created>1532353458706</created>
@@ -397,17 +446,24 @@
       <option name="project" value="LOCAL" />
       <updated>1544171530219</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add simple factory">
+      <created>1546932378953</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1546932378953</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100150000" />
+    <option name="totallyTimeSpent" value="104619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17523494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17965727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -442,32 +498,10 @@
     <MESSAGE value="magic methods" />
     <MESSAGE value="fix fasade" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="add simple factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simple factory" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/03-Decorator/example/html.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-Decorator/challenge/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magic_methods/_call.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-Strategy/after/cube.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-Strategy/example1/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/14-Builder/index1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -715,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creational/SimpleFactory/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/creational/SimpleFactory/Email.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -729,10 +756,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/creational/SimpleFactory/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/creational/SimpleFactory/NotifierFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creational/builder/before/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creational/builder/before/Pizza.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creational/builder/after/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creational/builder/after/PizzaBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creational/builder/after/Pizza.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
