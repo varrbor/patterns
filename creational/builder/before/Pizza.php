@@ -28,9 +28,8 @@ class Pizza
     }
 }
 
-$pizzaRecipe = (new Pizza(9,'tttt','uuuu','eeee'));
+$pizzaRecipe = new Pizza(9,'tttt','uuuu','eeee');
 
-//$order = new Pizza($pizzaRecipe);
 echo '<pre>';
 print_r($pizzaRecipe->show());
 echo '</pre>';
